@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company | Business Help</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#">Company<span>Name</span></a>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1>Help your business <span>grow</span></h1>
+                <p>Tools and systems to help you get things done.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#services" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">What we do</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="image-placeholder bg-blue"></div>
+                        <h3>Planning</h3>
+                        <p>Helping you manage your business better.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="image-placeholder bg-green"></div>
+                        <h3>Systems</h3>
+                        <p>Adding software and tools to your workflow.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="image-placeholder bg-purple"></div>
+                        <h3>Marketing</h3>
+                        <p>Finding ways to reach more people.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What people say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"They helped us organize our work. We've seen good results."</p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-yellow"></div>
+                            <div>
+                                <h4>Person 1</h4>
+                                <span>CEO, TechFlow Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"They are professional and know what they are doing."</p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-red"></div>
+                            <div>
+                                <h4>Person 2</h4>
+                                <span>Director, Global Media</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-item">
+                <h3>Company</h3>
+                <p>Working with businesses since 2010.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Info</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Follow</h3>
+                <div class="social-links-text">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Company Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

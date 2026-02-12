@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Name | My Work</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-flex">
+            <div class="branding">
+                <a href="#" class="logo">Person<span>Name</span></a>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburg" id="hamburg">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <header class="section-head">
+                    <h2>My Projects</h2>
+                    <p>A few things I've built lately.</p>
+                </header>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item bg-p1">
+                        <div class="label">Project Alpha</div>
+                    </div>
+                    <div class="portfolio-item bg-p2">
+                        <div class="label">Project Beta</div>
+                    </div>
+                    <div class="portfolio-item bg-p3">
+                        <div class="label">Project Gamma</div>
+                    </div>
+                    <div class="portfolio-item bg-p4">
+                        <div class="label">Project Delta</div>
+                    </div>
+                    <div class="portfolio-item bg-p5">
+                        <div class="label">Project Epsilon</div>
+                    </div>
+                    <div class="portfolio-item bg-p6">
+                        <div class="label">Project Zeta</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about-flex">
+                <div class="about-visual bg-accent"></div>
+                <div class="about-text">
+                    <h2>Hi, I'm <span>Person Name</span>.</h2>
+                    <p>I build websites and apps. I try to make them easy to use and keep things simple.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">What I use</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML5</h3>
+                        <p>Building web pages</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>CSS3</h3>
+                        <p>Layout and design</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Adding features</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Responsive</h3>
+                        <p>Working on phones</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container form-container">
+                <h2 class="section-title">Say hello</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Person Name</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburg').addEventListener('click', function () {
+            document.getElementById('nav-list').classList.toggle('active');
+            this.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
